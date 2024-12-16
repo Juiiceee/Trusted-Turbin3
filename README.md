@@ -8,14 +8,9 @@
 
 1. **Soumission d'un projet** 📝  
    Une personne, par exemple, souhaite construire un puit en Afrique. Elle contacte différentes entreprises locales et obtient des devis pour chaque étape du projet (construction, matériaux, etc.).
-   ![image](https://github.com/user-attachments/assets/384e99a5-cd91-46df-b95f-4f0ca320f33e)
-   ![image](https://github.com/user-attachments/assets/c15ad1ad-90e3-4702-ab4a-450b0a061c31)
-
 
 3. **Création du contrat intelligent** 🛠️  
    Après avoir listé toutes les entreprises et les montants associés, elle soumet ces informations dans une **factory de smart contracts**. Chaque projet devient alors un contrat intelligent.
-   ![image](https://github.com/user-attachments/assets/69d000e9-78ad-46f2-8322-54f35966988f)
-   ![image](https://github.com/user-attachments/assets/8783baf9-1181-4785-b7b6-fa1a455285b4)
 
 4. **Financement collaboratif** 💰  
    Les utilisateurs de la plateforme que se soit un particulier comme une entreprise peuvent consulter les projets disponibles, voir le devis détaillé et choisir celui qu'ils souhaitent financer en crypto. S'ils aiment le projet, ils peuvent y contribuer directement.
