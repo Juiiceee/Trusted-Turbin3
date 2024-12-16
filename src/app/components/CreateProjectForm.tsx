@@ -1,7 +1,6 @@
 "use client";
 import { useState } from 'react';
 import { contractABIFactory, contractAddressFactory } from '../constants/factory';
-import { useAccount, useWriteContract } from 'wagmi';
 import axios from "axios"; // Pour effectuer des requêtes HTTP
 import { API_KEY, API_SECRET } from "@/../env" // Importe les clés API depuis le fichier .env
 import { Button } from "antd";
@@ -22,19 +21,19 @@ export default function CreateProjectForm() {
 	const pinataApiKey = API_KEY; // Remplace par ta clé API
 	const pinataSecretApiKey = API_SECRET; // Remplace par ta clé API secrète
 
-	const { address } = useAccount();
+	// const { address } = useAccount();
 
-	const { data: hash, isPending, error, writeContract } = useWriteContract();
+	// const { data: hash, isPending, error, writeContract } = useWriteContract();
 
-	const putNumber = async () => {
-		writeContract({
-			address: contractAddressFactory,
-			abi: contractABIFactory,
-			functionName: "createRequestDonation",
-			args: [projectName, projectDescription, ipfsDevis, ipfsHash, projectAmount, limitDate, longitude, latitude],
-			account: address,
-		})
-	}
+	// const putNumber = async () => {
+	// 	writeContract({
+	// 		address: contractAddressFactory,
+	// 		abi: contractABIFactory,
+	// 		functionName: "createRequestDonation",
+	// 		args: [projectName, projectDescription, ipfsDevis, ipfsHash, projectAmount, limitDate, longitude, latitude],
+	// 		account: address,
+	// 	})
+	// }
 
 
 	const handleFileChange = (event) => {
@@ -210,7 +209,7 @@ export default function CreateProjectForm() {
 				<Button onClick={handleUploadDevis} type='primary' disabled={!selectedFilePDF ? true : false} loading={processing && !ipfsDevis ? true : false}>Upload to Pinata</Button>
 			</div>
 
-			<Button type="primary" onClick={putNumber} className="px-4 py-2 bg-green-500 text-white rounded mt-4">
+			<Button type="primary" /* onClick={putNumber}*/ className="px-4 py-2 bg-green-500 text-white rounded mt-4">
 				Soumettre le projet
 			</Button>
 		</div>

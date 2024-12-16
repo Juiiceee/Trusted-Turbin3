@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image'; // Si tu utilises Next.js
-import Connect from "../components/Connect"; // Assurez-vous que le chemin est correct
+import Connect from "./AppWalletProvider"; // Assurez-vous que le chemin est correct
 
 export default function Header() {
   const navLinkStyles = {

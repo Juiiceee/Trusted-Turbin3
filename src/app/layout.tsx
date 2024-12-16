@@ -1,9 +1,9 @@
 // src/app/layout.tsx
-import CustomProvider from "./CustomProvider";
 import Header from "./components/Header";
 import Footer from "./components/Footer";// Assurez-vous que le chemin est correct
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import AppWalletProvider from "./components/AppWalletProvider";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -32,12 +32,12 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				<CustomProvider>
+				<AppWalletProvider>
 					<Header />
 					<main style={{ marginTop: "80px" }}>
 						{children}
 					</main>
-				</CustomProvider>
+				</AppWalletProvider>
 				<Footer />
 			</body>
 		</html>

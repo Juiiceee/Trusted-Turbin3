@@ -2,12 +2,12 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { useAccount, useWriteContract } from 'wagmi';
+// import { useAccount, useWriteContract } from 'wagmi';
 import * as Dialog from '@radix-ui/react-dialog';
 import { Button } from './Button';
 import ProjectCardModal from './ProjectCardModal'; // Import du modal
-import { contractABIDonation, contractAdressDonation } from '../constants/donation';
-import { parseEther } from 'ethers';
+// import { contractABIDonation, contractAdressDonation } from '../constants/donation';
+// import { parseEther } from 'ethers';
 interface ProjectCardProps {
   nom: string;
   latitude: string;
@@ -40,21 +40,21 @@ export default function ProjectCard({
   status,
 }: ProjectCardProps) {
 	const [donationInput, setDonationInput] = useState('0.0');
-	const { address } = useAccount();
-	const { data: hash, isPending, error, writeContract } = useWriteContract();
-	const putNumber = async () => {
-		writeContract({
-			address: contractAdressDonation,
-			abi: contractABIDonation,
-			functionName: "donate",
-			overrides: {
-				value: parseEther(donationInput),
-			},
-		})
-	}
+	// const { address } = useAccount();
+	// const { data: hash, isPending, error, writeContract } = useWriteContract();
+	// const putNumber = async () => {
+	// 	writeContract({
+	// 		address: contractAdressDonation,
+	// 		abi: contractABIDonation,
+	// 		functionName: "donate",
+	// 		overrides: {
+	// 			value: parseEther(donationInput),
+	// 		},
+	// 	})
+	// }
 
 	const handleDonation = () => {
-		putNumber();
+		// putNumber();
 		console.log(`Don de ${donationInput} AVAX soumis`);
 	};
   const progress = (Number(raised) / Number(goal)) * 100;
