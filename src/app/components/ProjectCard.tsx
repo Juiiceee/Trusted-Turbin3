@@ -55,7 +55,7 @@ export default function ProjectCard({
 
 	const handleDonation = () => {
 		// putNumber();
-		console.log(`Don de ${donationInput} AVAX soumis`);
+		console.log(`Don de ${donationInput} SOL soumis`);
 	};
   const progress = (Number(raised) / Number(goal)) * 100;
   const [openModal, setOpenModal] = useState(false); // État pour contrôler l'ouverture du modal
@@ -88,7 +88,7 @@ export default function ProjectCard({
         </div>
         {/* Objectif en bas à droite de l'image */}
         <div className="absolute bottom-2 right-2 bg-white text-gray-800 text-sm px-2 py-1 rounded">
-          Objectif: {goal} AVAX
+          Objectif: {goal} SOL
         </div>
       </div>
 
@@ -119,8 +119,8 @@ export default function ProjectCard({
 
         {/* Total des dons */}
         <div className="flex items-center mb-4">
-          <Image src="/images/ava.png" alt="AVAX Logo" width={24} height={24} />
-          <p className="ml-2 font-semibold">{raised} AVAX</p>
+          <Image src="/images/solana_icon.png" alt="SOL Logo" width={40} height={40} />
+          <p className="ml-2 font-semibold">{raised} SOL</p>
           <p className="ml-2 text-gray-500">({donationValue})</p>
         </div>
 

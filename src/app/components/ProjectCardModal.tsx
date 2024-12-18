@@ -26,7 +26,7 @@ export default function ProjectCardModal({ poolAddress, donationAmount, onClose 
         <DialogTitle className="text-lg font-bold mb-4">Faire un don</DialogTitle>
 
         <div className="flex items-center gap-4 mb-4">
-          <Image src="/images/ava.png" alt="Avalanche Icon" width={30} height={30} />
+          <Image src="/images/solana_icon.png" alt="Solana Icon" width={50} height={50} />
           <input
             type="number"
             value={donationInput}

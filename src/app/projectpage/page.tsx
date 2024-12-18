@@ -3,12 +3,12 @@
 import { useState } from 'react';
 import ProjectCard from "../components/ProjectCard"; // Import du composant ProjectCard
 import SearchBar from "../components/SearchBar"; // Import du composant SearchBar
-import { contractABIFactory, contractAddressFactory } from '../constants/factory';
+// import { contractABIFactory, contractAddressFactory } from '../constants/factory';
 
 // Simple Badge component for manual styles
 import { ReactNode, MouseEventHandler } from 'react';
 import { Description } from '@radix-ui/react-dialog';
-import { useReadContract } from 'wagmi';
+// import { useReadContract } from 'wagmi';
 import { read } from 'fs';
 
 interface BadgeProps {
@@ -97,36 +97,36 @@ export default function DonationMarketplace() {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedTag, setSelectedTag] = useState("");
 
-	const { data: readOne, refetch: refetchOne } = useReadContract({
-		address: contractAddressFactory,
-		abi: contractABIFactory,
-		functionName: "getRequestDonation",
-		args: [0],
-	});
+	// const { data: readOne, refetch: refetchOne } = useReadContract({
+	// 	address: contractAddressFactory,
+	// 	abi: contractABIFactory,
+	// 	functionName: "getRequestDonation",
+	// 	args: [0],
+	// });
 
-	const { data: readTwo, refetch: refetchTwo } = useReadContract({
-		address: contractAddressFactory,
-		abi: contractABIFactory,
-		functionName: "getRequestDonation",
-		args: [1],
-	});
+	// const { data: readTwo, refetch: refetchTwo } = useReadContract({
+	// 	address: contractAddressFactory,
+	// 	abi: contractABIFactory,
+	// 	functionName: "getRequestDonation",
+	// 	args: [1],
+	// });
 
-	const { data: readThree, refetch: refetchThree } = useReadContract({
-		address: contractAddressFactory,
-		abi: contractABIFactory,
-		functionName: "getRequestDonation",
-		args: [2],
-	});
-	const { data: readFour, refetch: refetchFour } = useReadContract({
-		address: contractAddressFactory,
-		abi: contractABIFactory,
-		functionName: "getRequestDonation",
-		args: [3],
-	});
-	const print = () => {
-		refetchOne();
-		console.log(readOne);
-	};
+	// const { data: readThree, refetch: refetchThree } = useReadContract({
+	// 	address: contractAddressFactory,
+	// 	abi: contractABIFactory,
+	// 	functionName: "getRequestDonation",
+	// 	args: [2],
+	// });
+	// const { data: readFour, refetch: refetchFour } = useReadContract({
+	// 	address: contractAddressFactory,
+	// 	abi: contractABIFactory,
+	// 	functionName: "getRequestDonation",
+	// 	args: [3],
+	// });
+	// const print = () => {
+	// 	refetchOne();
+	// 	console.log(readOne);
+	// };
 
 	// Filtrer les projets par tag et par recherche
 	// const filteredProjects = projects.filter((project) =>
@@ -177,7 +177,7 @@ export default function DonationMarketplace() {
 				{/* {filteredProjects.map((project, index) => (
 					<ProjectCard key={index} {...project} latitude={project.latitude.toString()} longitude={project.longitude.toString()} />
 				))} */}
-				{readOne && <ProjectCard
+				{/* {readOne && <ProjectCard
 					nom={readOne[0]}
 					latitude= {readOne[9]} // Coordonnées géographiques au lieu de location
 					longitude={readOne[8]}
@@ -227,7 +227,7 @@ export default function DonationMarketplace() {
 					donationValue="$50.00"
 					imageUrl="/images/exemple.png"
 					description={readFour[1]}
-					tag="Scholarship" />}
+					tag="Scholarship" />} */}
 			</div>
 
 			{/* Message si aucun projet ne correspond à la recherche ou au tag */}

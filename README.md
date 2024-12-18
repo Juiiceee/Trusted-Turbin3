@@ -31,7 +31,7 @@
 ## Technologies Utilisées 🚀
 
 - **Smart Contracts** avec Solidity
-- **Blockchain Avalanche** creation de notre propre L1 pour permet une certaine flexibilite et rapidite
+- **Blockchain Solana** creation de notre propre L1 pour permet une certaine flexibilite et rapidite
 - **NFTs** comme preuve de donation
 - **Crypto-monnaies** pour le financement
 

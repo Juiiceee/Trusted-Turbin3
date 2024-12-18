@@ -67,7 +67,7 @@ export default function SitePage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 my-30">
 
               <ProjectCard
-                nom="Association 1"
+                nom="Amnesty International"
                 latitude="47.9975"
                 longitude="0.1936"
                 poolAddress="0x5353TEFHUO48653OHFHPOHDNL1HF1"
@@ -75,15 +75,15 @@ export default function SitePage() {
                 raised={5}
                 recentDonors={['0x5353TEFHUO48653OHFHPOHDNL1HF1']}
                 donationAmount={0.1}
-                donationValue="$242.49"
-                imageUrl="/images/exemple.png"
-                description="Construction d'une école pour des enfants défavorisés"
-                tag="Construire une école"
+                donationValue="$1 025,5"
+                imageUrl="/images/guerre_palestine.webp"
+                description="Dons pour civils palestiniens"
+                tag="Dons pour les civils"
                 status="En cours"
               />
 
               <ProjectCard
-                nom="Association 2"
+                nom="UNICEF"
                 latitude="48.8566"
                 longitude="2.3522"
                 poolAddress="0x98ERD45678EFD341R9874TER2349RHJKL"
@@ -91,7 +91,7 @@ export default function SitePage() {
                 raised={12}
                 recentDonors={['0x4564EFHUO4567EFDGFDRYDR7890LFJX']}
                 donationAmount={0.15}
-                donationValue="$364.99"
+                donationValue="$2 461,2"
                 imageUrl="/images/exemple.png"
                 description="Construction d'une école pour des enfants défavorisés"
                 tag="Construire une école"
@@ -99,7 +99,7 @@ export default function SitePage() {
               />
 
               <ProjectCard
-                nom="Association 3"
+                nom="Amnesty International"
                 latitude="48.8704"
                 longitude="2.3318"
                 poolAddress="0x12FDERO8765EDDERF1234ERQWE456EFGH"
@@ -107,15 +107,15 @@ export default function SitePage() {
                 raised={7.5}
                 recentDonors={['0x98765RTERF12345678901']}
                 donationAmount={0.25}
-                donationValue="$605.99"
-                imageUrl="/images/Group1.png"
-                description="Construction d'une école pour des enfants défavorisés"
-                tag="Construire une école"
+                donationValue="$1 538,25"
+                imageUrl="/images/guerre_ukraine.jpeg"
+                description="Dons pour les civils ukrainiens"
+                tag="Dons pour les civils"
                 status="En cours"
               />
 
               <ProjectCard
-                nom ="Association 4"
+                nom ="Les restraurants du coeur"
                 latitude="48.8683"
                 longitude="2.3050"
                 poolAddress="0xA12FDERO45678EDDRRG456ETREWE234F"
@@ -123,10 +123,10 @@ export default function SitePage() {
                 raised={18}
                 recentDonors={['0x45HYUO768REWQEFRTYGFD']}
                 donationAmount={0.5}
-                donationValue="$1200.00"
-                imageUrl="/images/exemple.png"
-                description="Construction d'une école pour des enfants défavorisés"
-                tag="Construire une école"
+                donationValue="$3 691,8"
+                imageUrl="/images/restau_coeur.webp"
+                description="Aide pour les repas pour les plus demunis"
+                tag="Aide alimentaire"
                 status="En cours"
               />
 
