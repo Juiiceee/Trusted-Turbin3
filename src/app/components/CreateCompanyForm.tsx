@@ -58,7 +58,7 @@ export default function CreateCompanyForm() {
 			</div>
 
 			<div>
-				<label className="block text-sm font-medium">Adresse Ethereum</label>
+				<label className="block text-sm font-medium">Adresse Solana</label>
 				<input
 					type="text"
 					value={companyAddress}

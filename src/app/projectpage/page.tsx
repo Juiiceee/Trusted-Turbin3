@@ -97,47 +97,6 @@ export default function DonationMarketplace() {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [selectedTag, setSelectedTag] = useState("");
 
-	// const { data: readOne, refetch: refetchOne } = useReadContract({
-	// 	address: contractAddressFactory,
-	// 	abi: contractABIFactory,
-	// 	functionName: "getRequestDonation",
-	// 	args: [0],
-	// });
-
-	// const { data: readTwo, refetch: refetchTwo } = useReadContract({
-	// 	address: contractAddressFactory,
-	// 	abi: contractABIFactory,
-	// 	functionName: "getRequestDonation",
-	// 	args: [1],
-	// });
-
-	// const { data: readThree, refetch: refetchThree } = useReadContract({
-	// 	address: contractAddressFactory,
-	// 	abi: contractABIFactory,
-	// 	functionName: "getRequestDonation",
-	// 	args: [2],
-	// });
-	// const { data: readFour, refetch: refetchFour } = useReadContract({
-	// 	address: contractAddressFactory,
-	// 	abi: contractABIFactory,
-	// 	functionName: "getRequestDonation",
-	// 	args: [3],
-	// });
-	// const print = () => {
-	// 	refetchOne();
-	// 	console.log(readOne);
-	// };
-
-	// Filtrer les projets par tag et par recherche
-	// const filteredProjects = projects.filter((project) =>
-	// 	(selectedTag === "" || project.tag === selectedTag) &&
-	// 	(project.nom.toLowerCase().includes(searchTerm.toLowerCase()) ||
-	// 		(project.description?.toLowerCase().includes(searchTerm.toLowerCase()) ?? false))
-	// );
-
-	// Extraire les tags uniques des projets
-	//const tags = Array.from(new Set(projects.map((project) => project.tag)));
-
 	return (
 		<div className="container mx-auto px-4 py-8">
 			<h1 className="text-4xl font-bold mb-8 text-center">Nos projets caritatifs</h1>
@@ -174,60 +133,6 @@ export default function DonationMarketplace() {
 
 			{/* Affichage des cartes filtrées */}
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-				{/* {filteredProjects.map((project, index) => (
-					<ProjectCard key={index} {...project} latitude={project.latitude.toString()} longitude={project.longitude.toString()} />
-				))} */}
-				{/* {readOne && <ProjectCard
-					nom={readOne[0]}
-					latitude= {readOne[9]} // Coordonnées géographiques au lieu de location
-					longitude={readOne[8]}
-					poolAddress={readOne[6]}
-					goal={Number(readOne[4]) / 10**18}
-					raised={readOne[5]}
-					recentDonors={['0x5353TEFHUO48653OHFHPOHDNL1HF1']}
-					donationValue="$242.49"
-					imageUrl="/images/exemple.png"
-					description={readOne[1]}
-					tag="Construire une école" />}
-
-				{readTwo && <ProjectCard
-					nom={readTwo[0]}
-					latitude= {readTwo[9]} // Coordonnées géographiques au lieu de location
-					longitude={readTwo[8]}
-					poolAddress={readTwo[6]}
-					goal={Number(readTwo[4]) / 10**18}
-					raised={readTwo[5]}
-					recentDonors={['0x4564EFHUO4567EFDGFDRYDR7890LFJX']}
-					donationValue="$15.36"
-					imageUrl="/images/exemple.png"
-					description={readTwo[1]}
-					tag="Rénovation" />}
-
-				{readThree && <ProjectCard
-					nom={readThree[0]}
-					latitude= {readThree[9]} // Coordonnées géographiques au lieu de location
-					longitude={readThree[8]}
-					poolAddress={readThree[6]}
-					goal={Number(readThree[4]) / 10**18}
-					raised={readThree[5]}
-					recentDonors={['0x98765RTERF12345678901']}
-					donationValue="$25.60"
-					imageUrl="/images/Group1.png"
-					description={readThree[1]}
-					tag="Aide alimentaire" />}
-
-				{readFour && <ProjectCard
-					nom={readFour[0]}
-					latitude= {readFour[9]} // Coordonnées géographiques au lieu de location
-					longitude={readFour[8]}
-					poolAddress={readFour[6]}
-					goal={Number(readFour[4]) / 10**18}
-					raised={readFour[5]}
-					recentDonors={['0x45HYUO768REWQEFRTYGFD']}
-					donationValue="$50.00"
-					imageUrl="/images/exemple.png"
-					description={readFour[1]}
-					tag="Scholarship" />} */}
 			</div>
 
 			{/* Message si aucun projet ne correspond à la recherche ou au tag */}
