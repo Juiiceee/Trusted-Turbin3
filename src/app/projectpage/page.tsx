@@ -49,7 +49,7 @@ let projects = [
     latitude: "48.8566",
     longitude: "2.3522",
     poolAddress: "0x98ERD45678EFD341R9874TER2349RHJKL",
-    goal: 200, // Objectif réaliste en AVAX
+    goal: 200,
     raised: 120,
     recentDonors: ['0x4564EFHUO4567EFDGFDRYDR7890LFJX', '0x1234567890ABCDEF1234'],
     donationAmount: 0.15,
