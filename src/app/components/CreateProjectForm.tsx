@@ -21,20 +21,6 @@ export default function CreateProjectForm() {
 	const pinataApiKey = API_KEY; // Remplace par ta clé API
 	const pinataSecretApiKey = API_SECRET; // Remplace par ta clé API secrète
 
-	// const { address } = useAccount();
-
-	// const { data: hash, isPending, error, writeContract } = useWriteContract();
-
-	// const putNumber = async () => {
-	// 	writeContract({
-	// 		address: contractAddressFactory,
-	// 		abi: contractABIFactory,
-	// 		functionName: "createRequestDonation",
-	// 		args: [projectName, projectDescription, ipfsDevis, ipfsHash, projectAmount, limitDate, longitude, latitude],
-	// 		account: address,
-	// 	})
-	// }
-
 
 	const handleFileChange = (event) => {
 		setSelectedFile(event.target.files[0]);

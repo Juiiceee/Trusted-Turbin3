@@ -15,7 +15,7 @@ export default function ProjectCardModal({ poolAddress, donationAmount, onClose 
   const [donationInput, setDonationInput] = useState(donationAmount.toString());
 
   const handleDonation = () => {
-    console.log(`Don de ${donationInput} AVAX soumis`);
+    console.log(`Don de ${donationInput} SOL soumis`);
     onClose(); // Fermer le modal après avoir validé le don
   };
 
@@ -34,7 +34,7 @@ export default function ProjectCardModal({ poolAddress, donationAmount, onClose 
             placeholder="0.0"
             className="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none"
           />
-          <span className="text-sm text-gray-500">AVAX</span>
+          <span className="text-sm text-gray-500">SOL</span>
         </div>
 
         <div className="flex justify-end gap-2">

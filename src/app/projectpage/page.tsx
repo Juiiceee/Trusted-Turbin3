@@ -34,8 +34,8 @@ let projects = [
     latitude: "47.9975",  // Coordonnées réalistes
     longitude: "0.1936",
     poolAddress: "0x5353TEFHUO48653OHFHPOHDNL1HF1",
-    goal: 100, // Objectif réaliste en AVAX
-    raised: 45, // Montant déjà collecté
+    goal: 100,
+    raised: 45,
     recentDonors: ['0x5353TEFHUO48653OHFHPOHDNL1HF1', '0x2A3B4C5D6E7F8901AB2C'],
     donationAmount: 0.1,
     donationValue: "$10.24", // Conversion réaliste en dollars

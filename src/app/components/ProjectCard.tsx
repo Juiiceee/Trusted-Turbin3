@@ -40,18 +40,6 @@ export default function ProjectCard({
   status,
 }: ProjectCardProps) {
 	const [donationInput, setDonationInput] = useState('0.0');
-	// const { address } = useAccount();
-	// const { data: hash, isPending, error, writeContract } = useWriteContract();
-	// const putNumber = async () => {
-	// 	writeContract({
-	// 		address: contractAdressDonation,
-	// 		abi: contractABIDonation,
-	// 		functionName: "donate",
-	// 		overrides: {
-	// 			value: parseEther(donationInput),
-	// 		},
-	// 	})
-	// }
 
 	const handleDonation = () => {
 		// putNumber();

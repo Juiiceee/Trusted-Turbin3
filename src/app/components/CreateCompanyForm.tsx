@@ -1,26 +1,12 @@
 "use client";
 import { useState } from 'react';
 import { Button } from './Button';
-import { contractAddressFactory, contractABIFactory } from '../constants/factory';
 
 export default function CreateCompanyForm() {
 	const [companyName, setCompanyName] = useState('');
 	const [amount, setAmount] = useState(0);
 	const [companySiren, setCompanySiren] = useState(0);
 	const [companyAddress, setCompanyAddress] = useState('');
-	// const { address } = useAccount();
-
-	// const { data: hash, isPending, error, writeContract } = useWriteContract();
-
-	// const putNumber = async () => {
-	// 	writeContract({
-	// 		address: contractAddressFactory,
-	// 		abi: contractABIFactory,
-	// 		functionName: "createCompagny",
-	// 		args: [companyName, companySiren, amount, companyAddress],
-	// 		account: address,
-	// 	})
-	// }
 
 	return (
 		<div>
