@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image'; // Si tu utilises Next.js
-import Connect from "./AppWalletProvider"; // Assurez-vous que le chemin est correct
+import HomeClient from "./client";
 
 export default function Header() {
   const navLinkStyles = {
@@ -55,7 +55,7 @@ export default function Header() {
 
 			{/* Bouton Connect à droite */}
 			<div>
-				<Connect />
+				<HomeClient />
 			</div>
 		</header>
 	);

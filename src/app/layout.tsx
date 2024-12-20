@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";// Assurez-vous que le chemin est correct
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import AppWalletProvider from "./components/AppWalletProvider";
+import AppWalletProvider from "@/app/components/AppWalletProvider";
 import "./globals.css";
 
 const geistSans = localFont({
