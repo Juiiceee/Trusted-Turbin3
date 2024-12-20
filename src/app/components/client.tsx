@@ -14,7 +14,7 @@ export default function HomeClient() {
 	return (
 		isClient && (
 			<div>
-					<WalletMultiButton />
+				<WalletMultiButton />
 			</div>
 		)
 	);
