@@ -13,11 +13,9 @@ export default function HomeClient() {
 	}, [])
 	return (
 		isClient && (
-			<main className={!wallet ? "flex items-center justify-center min-h-screen relative" : "flex items-center justify-end relative"}>
-				<div className={!wallet ? "border hover:border-slate-900 rounded" : "border hover:border-slate-900 rounded absolute top-6 right-3"} >
+			<div>
 					<WalletMultiButton />
-				</div>
-			</main>
+			</div>
 		)
 	);
 }

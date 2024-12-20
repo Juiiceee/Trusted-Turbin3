@@ -52,8 +52,6 @@ export default function Header() {
           Nos projet
         </a>
       </nav>
-
-			{/* Bouton Connect à droite */}
 			<div>
 				<HomeClient />
 			</div>
