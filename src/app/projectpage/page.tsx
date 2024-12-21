@@ -8,7 +8,6 @@ import SearchBar from "../components/SearchBar"; // Import du composant SearchBa
 // Simple Badge component for manual styles
 import { ReactNode, MouseEventHandler } from 'react';
 import { Description } from '@radix-ui/react-dialog';
-// import { useReadContract } from 'wagmi';
 import { read } from 'fs';
 
 interface BadgeProps {
